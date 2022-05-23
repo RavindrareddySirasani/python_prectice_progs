@@ -1,0 +1,18 @@
+number=int(input('enter your number:'))
+first_no,second_no=0,1
+
+for i in range(number+1):
+    if i<0:
+        print('please enter number above zero')
+    elif i==0:
+        #return first_no
+        print(first_no)
+    elif i==1:
+        #return second_no
+        print(second_no)
+    else:
+        c=first_no+second_no
+        first_no=second_no
+        second_no=c 
+        #return c
+        print(c)

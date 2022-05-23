@@ -1,0 +1,41 @@
+class Compute:
+    def area(self, x=None, y=None):
+          if x!=None and y !=None:
+              return x*y
+          elif x!=None:
+              return x*x
+          else:
+              return 0
+obj = Compute()
+obj.area()
+obj.area(6)
+obj.area(2,8)
+
+#------------------------------------------------
+class World:
+       def hello(self, name=None):
+              if name is not None:
+                   print (“Hello “, name)
+              else:
+                   print(“Hello”)
+obj = World        # calling function without any argument
+obj.hello(“srinivas”) # calling function with an argument.
+
+
+
+
+
+#-------------------------------------------------------------
+
+def area(l, b):
+  c = l*b
+  return c
+def area(size):
+  c = size*size
+  return c
+area(4)
+area(5,6)
+
+
+
+

@@ -1,0 +1,13 @@
+def decor_division(func):
+    def inner(a,b):
+        c=func(a,b)+10
+        return c 
+    return inner    
+    
+
+@decor_division
+def division(a,b):
+    c=a+b 
+    return c 
+    
+print(division(10,5) )   
